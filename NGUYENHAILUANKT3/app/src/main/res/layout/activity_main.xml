@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail">
+
+    <EditText
+        android:id="@+id/st1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:ems="15"
+        android:hint="Nhập số thứ 1" />
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/hinhpheptinh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/st1"
+        android:src="@color/teal_200" />
+
+    <EditText
+        android:id="@+id/st2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/hinhpheptinh"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="Nhập số thứ 2"
+        android:ems="15"/>
+
+    <Button
+        android:id="@+id/tinhbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/st2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="TÍNH" />
+
+    <TextView
+        android:id="@+id/ketqua"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tinhbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="KẾT QUẢ LÀ"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ketqualuu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Kết quả gần đây:"
+        android:textSize="30sp"
+        android:layout_below="@+id/ketqua"/>
+
+</RelativeLayout>
